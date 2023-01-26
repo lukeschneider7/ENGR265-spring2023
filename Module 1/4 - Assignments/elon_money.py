@@ -13,7 +13,6 @@ the 20-year bonds pay 4.32%, with each compounding annually.
 
 ### all your code below ###
 
-import math
 
 # Initial Variables for treasury bond duration and interest rate
 principal = 44000000000
