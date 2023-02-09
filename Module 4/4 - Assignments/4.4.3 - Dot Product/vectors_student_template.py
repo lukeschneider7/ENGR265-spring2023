@@ -26,8 +26,12 @@ Step 2: Iterate through the vector(s) and calculate the dot product
 
 # store your result here. Do not change the name
 dot_product = 0
-
+i = 0
 ### Your code here
+for n in vector_a:
+   dot_product += (n * vector_b[i])
+   i += 1
+
 
 """
 Step 3: Calculate the error of your dot_product compared with numpy's solution

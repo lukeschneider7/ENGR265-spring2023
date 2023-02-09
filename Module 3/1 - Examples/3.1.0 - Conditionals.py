@@ -39,3 +39,14 @@ else:
 
 # number_three didn't satisfy the first condition, but it did satisfy
 # the second condition, which is why the else statement wasn't printed.
+
+# Own example
+age = int(input("How old are you?"))
+if age >= 60:
+    print("Your old as heck")
+elif age < 60 and age >= 40:
+    print("You're kinda old")
+elif age < 40:
+    print("You're very young")
+else:
+    print("Error in your input")
