@@ -42,3 +42,6 @@ print("For array: ")
 print(array)
 print("Min value is", value, " located at ("+str(x)+","+str(y)+")")
 
+width = random.randint(2, 5)
+arran = np.random.rand(width, width)
+print(arran)

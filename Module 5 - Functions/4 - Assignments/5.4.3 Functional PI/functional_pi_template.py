@@ -10,9 +10,26 @@ def my_pi(target_error):
     """
 
     ### YOUR CODE HERE ###
+    pi_estimate = 0
 
+    a = 1
+    b = 1 / (math.sqrt(2))
+    t = .25
+    p = 1
+
+    # perform 10 iterations of this loop
+    while abs(math.pi - pi_estimate) > desired_error:
+        a1 = (a + b) / 2
+        b1 = math.sqrt(a * b)
+        t1 = t - (p * ((a - a1) ** 2))
+        t = t1
+        a = a1
+        b = b1
+        p *= 2
+        pi_1 = ((a + b) ** 2) / (4 * t)
+        pi_estimate = pi_1
     # change this so an actual value is returned
-    return 0
+    return pi_estimate
 
 
 

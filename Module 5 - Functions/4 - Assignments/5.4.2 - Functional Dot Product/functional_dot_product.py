@@ -19,10 +19,15 @@ def dot_product(a,b):
     """
 
     ### YOUR CODE HERE ###
-
+    dot_p = 0
+    i = 0
+    ### Your code here
+    for n in a:
+        dot_p += (n * b[i])
+        i += 1
 
     ### CHANGE THIS RETURN VALUE. IT IS HERE SO THE CODE DOES NOT ERROR
-    return None
+    return dot_p
 
 """
 Step 1: Generate two "vectors" of equal length but full of random values
@@ -41,7 +46,7 @@ result = dot_product(vector_a,vector_b)
 """
 Step 3: Check your calculation against numpy
 """
-true_result = np.dot(vector_a,vector_b)
+true_result = np.dot(vector_a, vector_b)
 
 """
 Step 4: See if you're correct....
