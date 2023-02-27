@@ -1,5 +1,26 @@
 from os.path import exists
 
+# Find Week2-formulas using relative file path
+relative_path = "../../Module 1/0 - Lecture Examples/week2-formulas.py"
+if exists(relative_path):
+    print("Can see week 2 formulas!")
+else:
+    print("Cannot locate week2-formulas at path: ", relative_path)
+
+# Check to see another module 6 file via relative path
+relative_path = "./debugging-example.py"
+if exists(relative_path):
+    print("Can see debugger examples!")
+else:
+    print("Cannot locate debugging - examples via path: ", relative_path)
+
+# Check to see fibo.py using absolute filepath
+absolute_path = "/Users/luke/Documents/GitHub/ENGR265-spring2023/Module 6 - SWE/0 - Lecture Examples/fibo.py"
+if exists(absolute_path):
+    print("Can see absolute file path to fibo.ph!")
+else:
+    print("Cannot locate absolute file path to fibo.py: ", absolute_path)
+
 # check to see if we can see "train_data.txt" via relative path
 relative_path = "train_data.txt"
 if exists(relative_path):

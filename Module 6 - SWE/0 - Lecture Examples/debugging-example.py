@@ -1,9 +1,15 @@
 # make a simple function to test for even or odd
+def is_odd(num):
+    if num % 2 != 0:
+        return True
+    else:
+        return False
 def is_even(num):
     if num % 2 == 0:
         return True
     else:
         return False
+
 
 
 # make a helper function to calculate the average of some list
@@ -28,7 +34,8 @@ if __name__ == "__main__":
     sum = 0
     for n in new_list:
         sum += n
-        if is_even(n):
-            print(n, " is even")
-        else:
+        if is_odd(n):
             print(n, " is odd")
+        else:
+            print(n, " is even")
+    print("sum is", sum)
